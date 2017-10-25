@@ -11,5 +11,77 @@ Concretamente las modificaciones que hay que hacer en los ficheros son:
 - Si la linea del fichero comienza con el texto: "#BPM:", significa que especifica la velocidad a la que debe reproducirse (avanzar) la letra de la canción en el karaoke. Este valor debe ser un entero, por lo que si el valor especificado en el fichero contiene el carácter ',' hay que redondear el valor al valor entero más cercano.
 - El resto de líneas del fichero debe permanecer inalteradas.
 
-
+Un ejemplo de fichero de canción sería:
+```
+#TITLE:Mi carro
+#ARTIST:Manolo Escobar
+#LANGUAGE:EspaÃ±ol
+#EDITION:SingStar Cla ES
+#YEAR:1969
+#MP3:Manolo Escobar - Mi carro.mp3
+#COVER:Manolo Escobar - Mi carro.jpg
+#VIDEO:Manolo Escobar - Mi carro.avi
+#VIDEOGAP:0
+#BPM:219
+#GAP:27074
+: 0 4 54 Mi
+: 4 6 59  ca
+: 12 9 59 rro
+- 22
+: 24 3 58 Me
+: 28 2 59  lo
+: 30 3 61  ro
+: 33 6 62 ba
+: 39 3 61 ~
+* 42 13 59 ron
+- 57
+: 62 3 59 Es
+: 66 7 62 tan
+: 74 9 61 do
+- 84
+: 86 3 64 De
+: 90 3 62  ro
+: 93 3 61 me
+: 96 5 59 rí
+: 101 3 58 ~
+: 104 7 54 a
+- 113 114
+: 125 3 54 Mi
+: 129 5 59  ca
+: 136 11 59 rro
+- 148
+: 149 3 58 Me
+: 152 2 59  lo
+: 155 2 61  ro
+: 157 5 62 ba
+: 163 3 61 ~
+: 166 13 59 ron
+- 181
+: 188 3 59 A
+* 191 7 62 no
+: 199 11 61 che
+- 211
+: 211 4 64 Cuan
+: 216 3 62 do
+: 220 3 61  dor
+: 223 4 59 mí
+: 227 2 58 ~
+: 229 4 54 a
+- 235
+```
+...
+```
+: 1571 2 55 Y
+: 1574 2 55  por
+: 1577 1 55  fin
+: 1579 2 55  lo-en
+: 1582 3 57 con
+: 1587 12 59 tré
+- 1601
+: 1604 4 61 Sin
+: 1609 3 62  a
+: 1613 3 64 ta
+* 1617 53 66 lajes
+E
+```
 
