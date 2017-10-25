@@ -6,7 +6,11 @@ Tras una minuciosa investigación has descubierto que el problema viene por el f
 
 Tu misión, es crear un programa que cree una copia de las canciones del karaoke (almacenadas en el directorio resources/temazos) en el directorio (resources/grandesexitos), cambiando el formato del fichero que especifica los metadatos de la canción (llamado <nombre_cancion>.txt) por una compatible con la última versión del karaoke.
 
-Concretamente las modificaciones que hay que hacer en los ficheros son:
+Concretamente cada canción se graba en una carpeta que contiene, el fichero de karaoke de la canción (llamado <nombre_cancion>.txt), y una serie de ficheros que especifican la portada del disco, el videoclip de la canción, y opcionalmente el mp3 de la canción (todos almacenados en ficheros llamados <nombre_cancion>.(jpg|avi|mp3).
+
+Su solución debe copiar los ficheros binarios en una estructura de directorios similar a la original y procesar el fichero de karaoke implementando las modificaciones necesarias para que podamos usar el karaoke en nuestra fiesta.
+
+Concretamente las modificaciones que hay que hacer en los ficheros de karaoke de la canción son:
 - Si la línea del fichero comienza con el texto "#GAP:", significa que especifica el tiempo que hay entre el comienzo del video y el comienzo de la reproducción de la letra de la canción. Este valor debe ser un entero, por lo que si el valor especificado en el fichero contiene el carácter ',' hay que redondear el valor al valor entero más cercano.
 - Si la linea del fichero comienza con el texto: "#BPM:", significa que especifica la velocidad a la que debe reproducirse (avanzar) la letra de la canción en el karaoke. Este valor debe ser un entero, por lo que si el valor especificado en el fichero contiene el carácter ',' hay que redondear el valor al valor entero más cercano.
 - El resto de líneas del fichero debe permanecer inalteradas.
